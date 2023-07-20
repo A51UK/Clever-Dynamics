@@ -38,5 +38,8 @@ namespace Clever_Dynamics_Repository.Models.ProductionOrder
 
         [JsonProperty("WorkDone")]
         public string WorkDone { get; set; }
+
+        [JsonProperty("StartTime")]
+        public string StartTime { get; set; }
     }
 }

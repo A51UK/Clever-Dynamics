@@ -49,12 +49,23 @@ namespace Clever_Dynamics.Controllers
 
         [Route("/Production/SubmitJob")]
         [HttpPost]
-        public IActionResult SubmitJobTime(int orderId, string time, string workdone)
+        public IActionResult SubmitJob(int orderId, string time, string workdone)
         {
 
             orderProcess.SaveJobInfo(orderId, time, workdone);
 
             return Json(new { ok = true});
+        }
+
+
+        [Route("/Production/SubmitJobTime")]
+        [HttpPost]
+        public JsonResult SubmitJobTime(int orderId, string time, string workdone)
+        {
+
+            orderProcess.SaveJobStartDate(orderId);
+
+            return Json(new { ok = true });
         }
 
     }

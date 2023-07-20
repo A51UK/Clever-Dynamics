@@ -37,5 +37,15 @@ namespace Clever_Dynamics_Business_layer
 
         }
 
+        public void SaveJobStartDate(int orderId)
+        {
+            var order = FindOrder(orderId);
+
+            order._Job.StartTime = DateTime.Now.ToString();
+
+            _baseRepository.SendOrderJobStarted(order);
+
+        }
+
     }
 }

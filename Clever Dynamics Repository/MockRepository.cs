@@ -24,6 +24,7 @@ namespace Clever_Dynamics_Repository
         private string GetOperatorEndPoint = "\\MockJson\\GetOperator.Json";
         private string GetProductionOrderEndPoint = "\\MockJson\\GetProductionOrder.Json";
         private string SendProductionOrderEndPoint = "\\MockJson\\SendProductionOrder.Json";
+        private string SendProductionOrderTimerEndPoint = "\\MockJson\\SendProductionOrderStartDate.Json";
 
         private string LoadFile(string path) => System.IO.File.ReadAllText(path);
 
@@ -88,17 +89,16 @@ namespace Clever_Dynamics_Repository
 
         public override void SendProductionOrder(ProductionOrderModel productionOrder)
         {
-            var productionOrderList = GetProductionOrderList();
-
-            var removeOrder = productionOrderList.Find(x => x.Id == productionOrder.Id);
-
-            productionOrderList.Remove(removeOrder);
-
-            productionOrderList.Add(productionOrder); ;
-
-            string data = JsonConvert.SerializeObject(productionOrderList);
+            string data = JsonConvert.SerializeObject(productionOrder);
 
             SaveFile(base._address + SendProductionOrderEndPoint, data);
+        }
+
+        public override void SendOrderJobStarted(ProductionOrderModel productionOrder)
+        {
+            string data = JsonConvert.SerializeObject(productionOrder);
+
+            SaveFile(base._address + SendProductionOrderTimerEndPoint, data);
         }
     }
 }

@@ -70,6 +70,10 @@ var app = createApp({
         StartTimer() {
             timer.start();
 
+            var data = { orderId: this.OrderId };
+
+            $.post("/Production/SubmitJobTime", data);
+
             timer.addEventListener('secondsUpdated', function (e) {
                 app_root.Time = timer.getTimeValues().toString(); 
             });
@@ -78,10 +82,13 @@ var app = createApp({
         StopTimer() {
             timer.stop();
             this.IsWorkDone = true;
+
+    
+
         },
         SubmitJob() {
 
-            data = { orderId: this.OrderId, time: this.Time, workdone: $('#workdone').val() };
+            var data = { orderId: this.OrderId, time: this.Time, workdone: $('#workdone').val() };
 
             $.post("/Production/SubmitJob", data, function (data) {
                 if (data.ok == true) {

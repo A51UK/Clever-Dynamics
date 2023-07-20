@@ -15,5 +15,7 @@ namespace Clever_Dynamics_Repository
         public abstract List<ProductionOrderModel> GetProductionOrderList();
 
         public abstract void SendProductionOrder(ProductionOrderModel productionOrder);
+
+        public abstract void SendOrderJobStarted(ProductionOrderModel productionOrder);
     }
 }
