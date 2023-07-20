@@ -83,8 +83,10 @@ var app = createApp({
 
             data = { orderId: this.OrderId, time: this.Time, workdone: $('#workdone').val() };
 
-            $.post("/Production/SubmitJob", data, function () {
+            $.post("/Production/SubmitJob", data, function (data) {
+                if (data.ok == true) {
 
+                }
             });
 
         }
