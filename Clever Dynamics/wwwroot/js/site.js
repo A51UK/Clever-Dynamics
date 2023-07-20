@@ -16,6 +16,7 @@ var app = createApp({
 
         const jobitem_found = ref(false);
         const IsWorkDone = ref(false);
+        const orderId_error = ref(false);
 
         const JobName = ref("");
         const Detail = ref("");
@@ -31,7 +32,8 @@ var app = createApp({
             Time,
             JobID,
             WorkDone,
-            IsWorkDone
+            IsWorkDone,
+            orderId_error
         }
 
     },
@@ -54,6 +56,11 @@ var app = createApp({
                     app_root.Detail = data.detail;
                     app_root.Time = data.time;
                     app_root.jobitem_found = true;
+                    app_root.orderId_error = false
+                }
+                else {
+                    app_root.orderId_error = true;
+                    app_root.jobitem_found = false;
                 }
             });
 
