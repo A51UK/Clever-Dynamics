@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clever Dynamics", "Clever Dynamics\Clever Dynamics.csproj", "{84CAFEA2-789A-4A4C-B139-1D32DACF62CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clever Dynamics - Unit test", "Clever Dynamics - Unit test\Clever Dynamics - Unit test.csproj", "{FB40B1C3-2695-403C-BA0C-01E821F4F122}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clever Dynamics Repository", "Clever Dynamics Repository\Clever Dynamics Repository.csproj", "{07F606CF-2732-4145-B588-1A7A2FC87545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clever Dynamics Utility", "Clever Dynamics Utility\Clever Dynamics Utility.csproj", "{6BD9A669-4ABD-4757-A8C1-FBE31B1A90AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clever Dynamics Business layer", "Clever Dynamics Business layer\Clever Dynamics Business layer.csproj", "{097A6ED7-EB9A-4F3A-8CE0-EA4F1D3E7F44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84CAFEA2-789A-4A4C-B139-1D32DACF62CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CAFEA2-789A-4A4C-B139-1D32DACF62CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CAFEA2-789A-4A4C-B139-1D32DACF62CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CAFEA2-789A-4A4C-B139-1D32DACF62CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB40B1C3-2695-403C-BA0C-01E821F4F122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB40B1C3-2695-403C-BA0C-01E821F4F122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB40B1C3-2695-403C-BA0C-01E821F4F122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB40B1C3-2695-403C-BA0C-01E821F4F122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F606CF-2732-4145-B588-1A7A2FC87545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F606CF-2732-4145-B588-1A7A2FC87545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F606CF-2732-4145-B588-1A7A2FC87545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F606CF-2732-4145-B588-1A7A2FC87545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD9A669-4ABD-4757-A8C1-FBE31B1A90AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD9A669-4ABD-4757-A8C1-FBE31B1A90AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD9A669-4ABD-4757-A8C1-FBE31B1A90AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD9A669-4ABD-4757-A8C1-FBE31B1A90AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097A6ED7-EB9A-4F3A-8CE0-EA4F1D3E7F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097A6ED7-EB9A-4F3A-8CE0-EA4F1D3E7F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097A6ED7-EB9A-4F3A-8CE0-EA4F1D3E7F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097A6ED7-EB9A-4F3A-8CE0-EA4F1D3E7F44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BAFD0C8-7BDC-48B8-B11E-E47E8F6B6029}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Clever_Dynamics_Business_layer</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clever Dynamics Repository\Clever Dynamics Repository.csproj" />
+    <ProjectReference Include="..\Clever Dynamics Utility\Clever Dynamics Utility.csproj" />
+  </ItemGroup>
+
+</Project>

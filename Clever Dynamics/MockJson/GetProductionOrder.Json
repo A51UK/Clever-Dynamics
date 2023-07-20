@@ -1,0 +1,24 @@
+﻿{
+  "ProductionOrderModel": [
+    {
+      "Id": 3,
+      "Job": {
+        "Id": 2,
+        "Name": "Building PC",
+        "Description": "XYZ",
+        "DateTime": "00:00:00",
+        "WorkDone": "N/A"
+      }
+    },
+    {
+      "Id": 7,
+      "Job": {
+        "Id": 6,
+        "Name": "Building Car",
+        "Description": "XYZ",
+        "DateTime": "00:00:00",
+        "WorkDone": "N/A"
+      }
+    }
+  ]
+}

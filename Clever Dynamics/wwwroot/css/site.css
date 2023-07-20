@@ -1,0 +1,75 @@
+:root {
+    --blue: #0b51bf;
+    --red: red;
+}
+
+
+body, main 
+{
+    min-height:100vh; 
+
+}
+
+
+header
+{
+    padding:20px;
+    text-align:center;
+}
+
+
+header .title
+{
+    color:var(--blue);
+    text-decoration:none;
+}
+
+
+.loginform
+{
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+
+.validation-summary-errors li {
+    margin-top:10px;
+    color:red;
+}
+
+
+.productionOrder form
+{
+    max-width:400px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+    text-align:center;
+    margin-top:50px;
+}
+
+
+
+.productionOrder .jobitem {
+    max-width: 388px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.productionOrder .jobitem h2
+{
+    font-size:20px;
+}
+
+
+    .productionOrder .jobitem h3 {
+        font-size: 17px;
+    }

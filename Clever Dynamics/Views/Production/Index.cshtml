@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="productionOrder" id="app">
+    <div class="container order_number">
+        <form>
+            <div>
+                <label class="form-label">Product Order Number </label>
+
+                <input type="number" class="form-control mt-3" id="productOrderNumber" />
+
+                <input type="button" value="Submit" class="btn-primary mt-4 p-3" @@click="FindJob();" />
+            </div>
+        </form>
+    </div>
+
+    <div v-if="jobitem_found == true" class="container job">
+        <div class="jobitem">
+            <h3>Job Id: {{ JobID }}</h3>
+            <h3>Job Name:  {{ JobName }} </h3>
+            <h3>Description: {{ Detail }} </h3>
+            <h3>Time: {{ Time }} </h3>
+            <div class="text-center">
+                <button id="timer_start" class="m-3 p-3 d-inline-block btn-primary" @@click="StartTimer()">Start</button>
+
+                <button id="timer_start" class=" m-3 p-3 d-inline-block btn-danger" @@click="StopTimer()">Stop</button>
+            </div>
+
+        </div>
+    </div>
+    <div v-if="IsWorkDone == true">
+       
+        <form>
+            <label class="form-label">Enter Work Done:</label>
+            <input type="text" class="form-control mt-3" id="workdone">
+            <button id="timer_start" class=" m-3 mt-4 p-3 d-inline-block btn-danger" @@click="SubmitJob()">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/dist/easytimer.min.js"></script>
+    </div>
+}
+
